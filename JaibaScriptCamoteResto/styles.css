@@ -1,0 +1,313 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; /*Esto hace posible el diseño responsivo*/
+ }
+ 
+ @font-face{
+   font-family: themillion;
+   src: url(letra2.ttf);
+ }
+
+body{
+    background-color:black;
+    margin: 3vw 10vw;;
+}
+
+#agrupar{
+    width: 100%;
+    background-color: black;
+}
+
+ /************ ENCABEZADO ***********/
+ #encabezado{
+    width: 100%;
+    border-radius: 2vw; 
+    padding: 2vw; 
+  }
+
+  #encabezado > h1{
+      text-align: center;
+      font-family: themillion;
+      font-size: 5vw;
+      color: red;
+  }
+
+
+  /******** BARRA DE NAVEGACIÖN************/
+  #navegacion{
+    clear: both;
+    border-radius: 0.6vw;
+    margin: 1.5vw 0vw;
+  }
+
+  ul.navbar{
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul.navbar li{
+    display: inline-block; /*Con este estilo los elementos de la lista seguirán uno al lado del otro*/
+    width: 18%;
+    font: italic 1.1vw verdana, sans-serif;
+    padding: 1vw;
+    border-bottom: 0.28vw solid red;
+    box-shadow: 0 0.2vw 0.5vw rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+
+  ul.navbar li:hover{ /*Pseudo clase para cambiar el aspecto cuando el cursor pasa sobre ese elemento*/
+    border-radius: 0.7vw;
+    background-color: #2196f3;
+    border-bottom: 0.28vw solid white;
+    color: #b62b2b;
+  }
+
+
+  ul.navbar a{
+    text-decoration: none;
+    color: #EEEEEE;
+  }
+
+  ul.navbar a:hover{ /*Aquí por ejemplo cambiamos el color de la fuente cuando el cursor está sobre el elemento*/
+    color: #101010;
+    font-size: 1.2vw;
+  }
+
+  ul.navbar a:active{
+    color: blue;
+  }
+
+/************** TERMINA NAVEGACIÓN ****************/
+
+
+/********** CONTENIDO PRINCIPAL SECTION ************/
+
+#principal{
+    width: 100%;
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+
+#lema{
+  width: 100%;
+  text-align: center;
+  padding: 1vw 5vw;
+  font-family: themillion;
+  font-size: 3vw;
+  color: orangered;
+}
+
+#portada{
+  width: 100%;
+}
+
+
+
+
+/***************** PIE DE PÁGINA *********************/
+
+#pie{
+    clear: both;
+    margin-top: 2vw;
+    padding: 1vw 0vw;
+    text-align: center;
+    color: #EEEEEE;
+    font-family: helvetica;
+    font-size: 0.7vw;
+    font-style: italic;
+    box-shadow: 0 0.2vw 0.5vw #EEEEEE, 0 1px 2px  #EEEEEE;
+}
+
+/************** Párrafos y encabezados *******************/
+
+p{
+  margin-top: 1vw;
+  font: italic 1.1vw verdana, sans-serif;
+}
+
+#mostrarPlatillos {
+  box-sizing: border-box;
+  display:block;
+  /*background-color: gold;*/
+}
+
+#mostrarPlatillos > div{
+  box-sizing: border-box;
+  display: inline-block;
+  font: 1.2vw times new roman;
+  font-weight: 100;
+  color: #EEEEEE;
+  font-style: italic;
+  width: 20%;
+  padding: 1.5vw;
+  text-align: center;
+}
+
+
+#mostrarPlatillosPedidos {
+  box-sizing: border-box;
+  display:block;
+  /*background-color: gold;*/
+}
+
+#mostrarPlatillosPedidos > div{
+  box-sizing: border-box;
+  display: inline-block;
+  font: 1.2vw times new roman;
+  font-weight: 100;
+  color: #EEEEEE;
+  font-style: italic;
+  width: 20%;
+  padding: 1.5vw;
+  text-align: center;
+}
+
+/**************** SOLO FORMULARIOS ***************/
+#forms {
+  margin-top: 2vw;
+  box-sizing: border-box;
+  display:block;
+  text-align: center;
+  align-items: center;
+  background-image: url("https://s1.1zoom.me/b5050/737/Roast_Chicken_Frikadeller_573130_1366x768.jpg");
+  background-size: 100%;
+}
+
+label{
+  font: italic 1.1vw verdana, sans-serif;
+  color: #EEEEEE;
+}
+
+fieldset{
+  font: italic 1.1vw verdana, sans-serif;
+  color: #EEEEEE;
+  padding: 1.5vw 0vw;
+  margin-top: 1vw;
+}
+
+input, textarea, button{
+  padding: 0.5vw;
+  font: italic 1.1vw verdana, sans-serif;
+  color: #303030;
+  border-radius: 0.4vw;
+  background-color: #EEEEEE;
+}
+
+button{
+  background-color: orange;
+}
+button:hover{
+  background: #2196f3;
+  color: #EEEEEE;
+}
+
+td{
+  text-align: center;
+ 
+}
+
+table{
+  padding: 0% 30%;
+  width: 100%;
+}
+
+
+/**************** SOLO FORMULARIOS*********************/
+
+
+
+
+h2{
+  font-size: 2vw;
+  text-align: center;
+  padding: 3vw 0vw;
+  font-family:themillion;
+  color: red;
+}
+
+
+#pedidos{
+  width: 100%;
+  margin-top: 2vw;
+  padding: 2vw;
+  background-image: url("https://images.wallpaperscraft.com/image/cafe_cup_coffee_hot_mood_table_chairs_furniture_shade_54328_1366x768.jpg");
+  background-size: 100%;
+}
+
+
+#mostrarPlatillosOrden, #mostrarTotalOrden, #mostrarCierreDia, #mostrarTotalDia{
+  font: italic 1.1vw verdana, sans-serif;
+  color: #EEEEEE;
+}
+
+
+/************** PARTE RESPONSIVA CON REJILLAS ***************/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+    [class*="col-"] {
+    /*Definimos estilos para todos los contenedores pertenecientes a esta clase*/
+    float: left;
+    padding: 0.5vw;
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+    width: 100%;
+
+    }
+
+  
+    @media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 5%;}
+  .col-s-2 {width: 10%;}
+  .col-s-3 {width: 15%;}
+  .col-s-4 {width: 20%;}
+  .col-s-5 {width: 25%;}
+  .col-s-6 {width: 30%;}
+  .col-s-7 {width: 35%;}
+  .col-s-8 {width: 40%;}
+  .col-s-9 {width: 45%;}
+  .col-s-10 {width: 50%;}
+  .col-s-11 {width: 55%;}
+  .col-s-12 {width: 60%;}
+  .col-s-13 {width: 65%;}
+  .col-s-14 {width: 70%;}
+  .col-s-15 {width: 75%;}
+  .col-s-16 {width: 80%;}
+  .col-s-17 {width: 85%;}
+  .col-s-18 {width: 90%;}
+  .col-s-19 {width: 95%;}
+  .col-s-20 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 5%;}
+  .col-2 {width: 10%;}
+  .col-3 {width: 15%;}
+  .col-4 {width: 20%;}
+  .col-5 {width: 25%;}
+  .col-6 {width: 30%;}
+  .col-7 {width: 35%;}
+  .col-8 {width: 40%;}
+  .col-9 {width: 45%;}
+  .col-10 {width: 50%;}
+  .col-11 {width: 55%;}
+  .col-12 {width: 60%;}
+  .col-13 {width: 65%;}
+  .col-14 {width: 70%;}
+  .col-15 {width: 75%;}
+  .col-16 {width: 80%;}
+  .col-17 {width: 85%;}
+  .col-18 {width: 90%;}
+  .col-19 {width: 95%;}
+  .col-20 {width: 100%;}
+}
+*/

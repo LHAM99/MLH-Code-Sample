@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BF RESTO</title>
+    <script src="script.js"></script>  
+    <script>inicioDia()
+    </script>
+</head>
+
+<body>
+    <header id="encabezado">
+        <h1>"BEEF  STEAK  RESTO"</h1>
+    </header>
+    <div id="agrupar">
+       
+        <nav id="navegacion">
+            <ul class="navbar">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#platillos">Configuracion Platillos</a></li>
+                <li><a href="#pedidos">Pedido</a></li>
+                <li><a href="#cierre">Cierre de dia</a></li>
+                <li><a href="#conocenos">Buffet espadas</a></li>
+            </ul>
+        </nav>
+
+        <div id="lema">
+            <a name="inicio"></a>
+            <p>En beef steak resto le ofrecemos los mejores cortes de carne de la ciudad, es por eso que nuestra
+            carta es reducida pero cada platillo le contara una historia intima, nueva y extravagante que 
+            le dejará los sentidos a flor de piel.
+        </div>
+
+        <section id="principal">
+            <article id="portada"><img src="https://s1.1zoom.me/b5052/115/The_second_dishes_Meat_products_Vegetables_Wood_536707_1366x768.jpg" width="100%"></article>
+
+            <article id=mostrarPlatillos>
+                <h2>CARTA</h2>
+                <script>mostrarCarta()</script>
+            </article>
+
+            <a name="platillos"></a> 
+            <article id="forms">
+                <h2>GESTIÓN DE PLATILLOS</h2>
+                    <input id="deletePlato" type="text" size="3vw">
+                    <button type="button" onclick="eliminarPlato();"><b>ELIMINAR PLATILLO </button>
+                    <br><br>
+                    <input id="modificarPlato" type="text" size="3vw"> 
+                    <button type="button" onclick="modificarPPlato();"><b>MODIFICAR PRECIO PLATILLO </button>
+                    <br><br>
+                    <button type="button" onclick="agregarPlato();"><b>AGREGAR PLATILLO</button>
+                    <table>
+                        <tr><td><label>ID</label></td> <td><input id="id" type="number"></td></tr>
+                        <tr><td><label>Nombre</label></td> <td><input id="nombre" type="text"></td></tr>
+                        <tr><td><label>Precio</label></td> <td><input id="precio" type="number"></td></tr>   
+                        <tr><td><label>Tipo de comida</label></td> <td><input id="tipoComida" type="text"></td></tr>    
+                    </table>
+
+                    <fieldset style="width: 100%;border-color: black;">
+                        <legend style="color: #eeeeee; text-align: center;">Descripción</legend>
+                        <textarea id="descripcion" type="text" rows=7% cols="45%"></textarea>
+                    </fieldset>
+            </article>
+
+
+            <a name="pedidos"></a>
+            <article id="pedidos">
+                <h2>PEDIDOS</h2>
+                <table>
+                    <tr><td><label>ID platillo</label></td> <td><input id="IDPEDIDO" type="number"></td></tr>
+                    <tr><td><label>Cantidad</label></td> <td><input id="NUMPEDIDOS" type="number"></td></tr>
+                    <tr><td> </td>
+                    <td><button type="button" onclick="hacerPedido();"><b>AGREGAR PEDIDO A ORDEN</button></td</tr>
+                    <tr><td> </td>
+                    <td style="text-align: center;"><button type="button" onclick="terminarOrden();"><b>TERMINAR ORDEN</button></td></tr>
+                </table>
+
+                <article id="mostrarPlatillosOrden">
+
+                </article>
+                <article id="mostrarTotalOrden">
+                </article>
+            </article>
+
+            <a name="cierre"></a>
+            <article id="cierreDia">
+                <button type="button" onclick="terminarDia();"><b>¡TERMINAR EL DIA!</button><br>
+
+                <article id="mostrarCierreDia">
+                </article>
+
+                <article id="mostrarTotalDia">
+                </article>
+            </article>
+
+            <a name="conocenos"></a>
+            <article style="margin-top: 1vw;">
+                <video src="resto.mp4" width="20%" controls></video>
+            </article>
+        </section>
+    </div>
+    <footer id="pie">
+        Derechos Reservados &copy;     
+        Alvarez Martinez Luis Heberto       
+        -Cortés Pineda Roberto Carlos<br>
+        Diseño de aplicaciones web 
+        <footer>Actualizado 2022</footer>
+    </footer>
+</body>
+
+</html>
